@@ -1,5 +1,14 @@
 #!/bin/bash
-#Agrego un comentario para hacer el quinto commit
+
+# Pedir el nombre de usuario
+read -p "Enter your username: " username
+
+# Validar que el nombre de usuario no exceda los 22 caracteres
+if [ ${#username} -gt 22 ]; then
+    echo "El nombre de usuario no debe tener más de 22 caracteres."
+    exit 1
+fi
+
 # Generar un número aleatorio entre 1 y 1000
 secret_number=$(( RANDOM % 1000 + 1 ))
 number_of_guesses=0
