@@ -1,0 +1,1 @@
+-- Este archivo contiene el dump de la base de datos para el juego de adivinanza de números.
